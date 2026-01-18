@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px 20px;
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .buttons {
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .btn-outline {
+    border: 2px solid #333;
+    color: #333;
+    background: transparent;
+  }
+  
+  .btn-filled {
+    background-color: #e74c3c;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-section {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  
+  .image-section img {
+    width: 400px;
+  }
+  
+  .tag {
+    position: absolute;
+    padding: 5px 12px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag.html { top: 20px; left: -40px; background-color: #28a745; color: #fff; }
+  .tag.css { top: 50px; right: -30px; background-color: #ffc107; }
+  .tag.js { top: 150px; left: -30px; background-color: #f0db4f; }
+  .tag.java { top: 80px; left: 100px; background-color: #00bcd4; color: #fff; }
+  .tag.cpp { top: 0px; right: 50px; background-color: #007bff; color: #fff; }
+  .tag.php { top: 100px; right: 10px; background-color: #4CAF50; color: #fff; }
+  .tag.code { bottom: 30px; left: 30px; background-color: #e0e0e0; }
+  .tag.hello { bottom: 20px; right: 20px; background-color: #fff; border: 1px solid #ccc; }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  

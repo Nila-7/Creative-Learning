@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> React Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background:#2396aa;
+    }
+
+    .quiz-heading {
+      text-align: center;
+      margin: 20px 0;
+      font-weight: bold;
+      color:#2396aa;
+    }
+
+    .quiz-card {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .question {
+      margin-bottom: 25px;
+    }
+
+    .quiz-text {
+      margin-left: 10px;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+
+    .button-space {
+      margin-left: 15px;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-weight: bold;
+      text-align: center;
+      color: #2396aa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">🧠 Quiz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">🏠 Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reactic.html">📘 React - Topic</a>
+          </li>
+          <div class="dropdown">
+            <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              📚 Courses
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="apiic.html">🎨 API</a>
+              <a class="dropdown-item" href="rescssic.html">💻 Res C++</a>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Quiz Card -->
+  <div class="card quiz-card bg-white">
+    <h1 class="quiz-heading">React Quiz ✨</h1>
+    <div class="card-body">
+      <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+          <h5>1. What function is used to create components ?  🧾</h5>
+          <label><input type="radio" name="q1" value="a" /> 📘class</label><br />
+          <label><input type="radio" name="q1" value="b" /> ⚙️ function</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+          <h5>2. Which hook is used for state management? 💬</h5>
+          <label><input type="radio" name="q2" value="a" /> ✅useEffect </label><br />
+          <label><input type="radio" name="q2" value="b" /> ❌ useState</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+          <h5>3.Which hook is used for side effects? 🔠</h5>
+          <label><input type="radio" name="q3" value="a" /> 🖋️useMemo </label><br />
+          <label><input type="radio" name="q3" value="b" /> 🅱️ use Effect</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+          <h5> 4.JSX stands for? 🖼️</h5>
+          <label><input type="radio" name="q4" value="a" /> 📄 Java Syntax XML</label><br />
+          <label><input type="radio" name="q4" value="b" /> 🔗 JavaScript XML</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+          <h5>5.What prop helps React identify which items have changed? 📋</h5>
+          <label><input type="radio" name="q5" value="a" /> 🔢  id</label><br />
+          <label><input type="radio" name="q5" value="b" /> 🔘Key </label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+          <h5>6. What is the parent element in every React component return?🔗</h5>
+          <label><input type="radio" name="q6" value="a" /> 🏷️ span</label><br />
+          <label><input type="radio" name="q6" value="b" /> 🌐div (or B. Fragment, both are common) </label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+          <h5>7. Which company maintains React?📦</h5>
+          <label><input type="radio" name="q7" value="a" /> 🧱Meta </label><br />
+          <label><input type="radio" name="q7" value="b" /> 🧭Google </label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+          <h5>8. Which element do you use to display? 🆔</h5>
+          <label><input type="radio" name="q8" value="a" /> 🏷️render</label><br />
+          <label><input type="radio" name="q8" value="b" /> 🧬 display </label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+          <h5>9.What hook lets you use context? 📑</h5>
+          <label><input type="radio" name="q9" value="a" /> 🧭useContext </label><br />
+          <label><input type="radio" name="q9" value="b" /> 🧱 useProp</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+          <h5>10.  Which hook is used for memoization? 👨‍💻</h5>
+          <label><input type="radio" name="q10" value="a" /> 🐍 useMemo </label><br />
+          <label><input type="radio" name="q10" value="b" /> 🖼️  use Effect </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="text-center">
+          <button type="button" class="btn btn-info button" onclick="checkAnswers()">Submit</button>
+          <a type="button" class="btn btn-outline-info button-space" href="reactquiz.html">Back</a>
+        </div>
+
+        <!-- Result -->
+        <div id="result"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: 'a',
+        q2: 'a',
+        q3: 'a',
+        q4: 'a',
+        q5: 'a',
+        q6: 'b',
+        q7: 'b',
+        q8: 'b',
+        q9: 'b',
+        q10: 'a'
+      };
+
+      let score = 0;
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").innerHTML = `✅ You scored ${score} out of ${Object.keys(answers).length}`;
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Creative Learning - Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #2396aa, #2396aa);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem; /* Base font size = 16px */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      margin-top: 25px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.8rem;
+      text-shadow: 1px 1px 2px #00000044;
+    }
+
+    .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card-custom {
+      width: 320px;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 18px 22px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-custom::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      right: -30%;
+      width: 120%;
+      height: 120%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.05));
+      transform: rotate(45deg);
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px) scale(1.015);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      z-index: 1;
+      position: relative;
+    }
+
+    .text-primary { color: #2396aa; }
+    .text-success { color: #198754; }
+    .text-warning { color: #ff9f1c; }
+    .text-danger  { color: #e63946; }
+
+    @media (max-width: 576px) {
+      .card-custom {
+        width: 100%;
+      }
+    }
+    .btn-fancy {
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-fancy:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+        .btn-fancy {
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  color: #2396aa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-fancy:hover {
+  transform: translateY(-2px);
+  background-color: #e6f7fa;
+  color: #2396aa;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- 🧭 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        📚 Know more
+    </a>
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item mx-2"><a class="nav-link" href="home.html">🏠 Home</a></li>
+      <li class="nav-item mx-2"><a class="nav-link" href="help.html">🆘 Help</a></li>
+      <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">ℹ️ About</a></li>
+      <li class="nav-item mx-2"><a class="nav-link" href="contact.html">📞Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 📚 Page Title -->
+<h2>📖 Creative Learning</h2>
+
+<!-- 💠 Cards Section -->
+<div class="cards-wrapper">
+
+  <div class="card-custom">
+    <div class="card-title text-primary">📘 Courses</div>
+    <div class="card-text">
+      🔸 Learn HTML, CSS & JS<br>
+      🧠 Easy topics + examples<br>
+      🎥 Visual aids<br>
+      📝 Notes ready
+    </div>
+  </div>
+
+  <div class="card-custom">
+    <div class="card-title text-success">💪 Exercise</div>
+    <div class="card-text">
+      🎯 Topic-wise practice<br>
+      🌿 Brain-boosters<br>
+      💡 Instant tips<br>
+      🚀 Skill up
+    </div>
+  </div>
+
+  <div class="card-custom">
+    <div class="card-title text-warning">❓ Que/Ans</div>
+    <div class="card-text">
+      💬 Fast learning<br>
+      ✏️ Boost confidence<br>
+      🔍 Sharpen basics<br>
+      🎓 Exam-ready
+    </div>
+  </div>
+
+  <div class="card-custom">
+    <div class="card-title text-danger">📄 Projects</div>
+    <div class="card-text">
+      🔧 Mini-projects<br>
+      💻 Learn by doing<br>
+      📁 Portfolio ideas<br>
+      🔥 Code real
+    </div>
+  </div>
+
+<!-- 🔘 Buttons Below the Cards -->
+<div class="w-100 text-center mt-4">
+    <a href="login.html" class="btn-fancy btn btn-light me-2">🔑 Login</a>
+    <a href="home.html" class="btn-fancy btn btn-light">🏠 Back to Home</a>
+  </div>
+  
+  
+  
+</body>
+</html>

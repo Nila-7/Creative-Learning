@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>❓ Que/Ans - Creative Learning</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #2396aa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color:  #2396aa;
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card .question {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color:  #2396aa;
+    }
+
+    .card .answer {
+      margin-top: 10px;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .emoji {
+      font-size: 1.5rem;
+      margin-right: 8px;
+    }
+
+    .btn-back {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 767px) {
+      .card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">📚 Contents</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" onclick="display('sectionHomepage')" href="home.html">🏠 Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">🆘 Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ℹ️ About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Page Title -->
+  <h2><span class="emoji">❓</span> Questions & Answers</h2>
+
+  <!-- Question Cards -->
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓What’s the difference between id and class in HTML?
+          </div>
+          <div class="answer">💻 id vs class: id is unique per page; class can be reused across elements.</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What are semantic HTML elements? Give examples.</div>
+          <div class="answer">💻 Semantic HTML: Tags that describe meaning, like header, section, article.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓How does event delegation work?</div>
+          <div class="answer">💻 Data types: Primitives (string, number, etc.) and objects.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓What is a Promise and how is it used?</div>
+          <div class="answer">💻 Promise: An object for handling async success/failure.          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓How would you make a website responsive?          </div>
+          <div class="answer">💻Responsive site: Use flexible units and media queries. </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓How do you center a div horizontally and vertically?</div>
+          <div class="answer">💻 Center a div: Use flexbox or transform with absolute position.          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What is the virtual DOM and how does React use it?</div>
+          <div class="answer">💻 Virtual DOM: React’s in-memory DOM for fast UI updates.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓What are controlled and uncontrolled components?</div>
+          <div class="answer">💻Controlled vs Uncontrolled: Controlled uses React state; uncontrolled uses DOM refs.          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ How would you improve page load performance?</div>
+          <div class="answer">💻 Page load perf: Minify code, lazy load, use CDN.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What is HTML?</div>
+          <div class="answer">💻 HTML stands for HyperText Markup Language, used to create web pages.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓What are some ways to prevent layout shifts (CLS)?          </div>
+          <div class="answer">💻 Prevent CLS: Reserve space for dynamic content and images.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What’s the difference between flexbox and grid? When would you use each?</div>
+          <div class="answer">💻 Flexbox vs Grid: Flexbox = 1D layout, Grid = 2D layout.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What’s the difference between relative, absolute, and fixed positioning?          </div>
+          <div class="answer">💻 Positioning: relative moves from normal spot, absolute from nearest ancestor, fixed from viewport.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What is prop drilling and how can it be avoided?</div>
+          <div class="answer">💻 Prop drilling: Passing props deep; avoid with Context or state managers.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What are Core Web Vitals?</div>
+          <div class="answer">💻 Core Web Vitals: LCP, FID, CLS measure user experience.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ Explain how map(), filter(), and reduce() work?</div>
+          <div class="answer">💻 map/filter/reduce: map transforms, filter selects, reduce accumulates.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓How would you handle performance optimization in React?</div>
+          <div class="answer">💻 Performance: Use memoization, lazy loading, and code-splitting.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ What are callback functions?</div>
+          <div class="answer">💻 Callback: A function passed into another to be run later.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ How do you stay updated with frontend trends and tech?</div>
+          <div class="answer">💻 Stay updated with frontend trends: I follow blogs, newsletters, and YouTubers like Fireship and Web Dev Simplified.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="question">❓ How do you ensure your code is maintainable and readable?</div>
+          <div class="answer">💻 Maintainable and readable code: I use consistent naming, modular structure, comments, and tools like ESLint and Prettier          </div>
+        </div>
+      </div>
+
+    <!-- Back Button -->
+    <div class="text-center btn-back">
+        <a href="learnmore.html" class="btn btn-dark btn-fancy">🏡 Back to Index</a>
+    </div>
+  </div>
+
+</body>
+</html>

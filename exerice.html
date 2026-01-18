@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💪 Exercise - Creative Learning</title>
+  <style>
+    :root {
+      --main-color: #2396aa;
+    }
+
+    body {
+      background-color: var(--main-color);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--main-color);
+      display: flex;
+      align-items: center;
+    }
+
+    nav a:hover {
+      color: #15727f;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.5em;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      border: 2px solid var(--main-color);
+    }
+
+    .card h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: var(--main-color);
+    }
+
+    .card p {
+      font-size: 1em;
+      color: #444;
+    }
+
+    input[type="file"] {
+      border: 2px solid var(--main-color);
+      border-radius: 8px;
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: 2px solid var(--main-color);
+      background-color: var(--main-color);
+      color: white;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1e8194;
+      border-color: #1e8194;
+    }
+
+    #fileName {
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .preview {
+      margin-top: 15px;
+      border-top: 1px dashed var(--main-color);
+      padding-top: 10px;
+    }
+
+    .preview img {
+      max-width: 100%;
+      margin-top: 10px;
+      border: 2px solid var(--main-color);
+      border-radius: 10px;
+    }
+
+    .preview pre {
+      background: #eafafd;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      border: 1px solid var(--main-color);
+    }
+    .container {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3239/3239950.png" alt="Logo" />Contents</a>
+    <a href="home.html">🏠 Home</a>
+    <a href="learnmore.html"> 📖 Index</a>
+    <a href="help.html">🆘 Help</a>
+    <a href="aboutus.html">ℹ️ About</a>
+  </nav>
+
+  <div class="container">
+    <h1>📘 Exercise</h1>
+
+    <!-- Exercise Cards -->
+<div class="card">
+    <h2>📚 Exercise 1</h2>
+    <p><strong>📝 Title:</strong> "My First Web Page"</p>
+    <p><strong>🎯 Task:</strong>  Include a heading and a paragraph of text.</p>
+  </div>
+  
+  <div class="card">
+    <h2>📚 Exercise 2</h2>
+    <p><strong>📝 Title:</strong> Add an image to your page</p>
+    <p><strong>🎯 Task:</strong> Use the <img> tag.
+
+        Add alt text and adjust the width to 300px.</p>
+  </div>
+  
+  <div class="card">
+    <h2>📚 Exercise 3</h2>
+    <p><strong>📝 Title:</strong> Create a table</p>
+    <p><strong>🎯 Task:</strong> Create a basic HTML page with:
+        Display student data with headers: Name, Age, Grade.
+    </p>
+  </div>
+  
+  <div class="card">
+    <h2>📚 Exercise 4</h2>
+    <p><strong>📝 Title:</strong> Embed a YouTube video</p>
+    <p><strong>🎯 Task:</strong>  Use the iframe tag.   </p>
+  </div>
+  
+  <div class="card">
+    <h2>📚 Exercise 5</h2>
+    <p><strong>📝 Title:</strong> Build a resume in HTML only</p>
+    <p><strong>🎯 Task:</strong> Include sections like profile, education, skills, and contact.</p>
+  </div>
+  
+  <div class="card">
+    <h2>📚 Exercise 6</h2>
+    <p><strong>📝 Title:</strong> Create a form with multiple input types</p>
+    <p><strong>🎯 Task:</strong>ext, radio buttons, checkboxes, dropdown (select), and file upload
+    </p>
+  </div>
+  
+    <!-- Upload Card -->
+    <div class="card">
+      <h2>📤 Upload Your Solution</h2>
+      <p>Done with your work? Upload your solution below!</p>
+      <input type="file" id="fileInput" />
+      <p id="fileName"></p>
+      <div id="preview" class="preview"></div>
+      <button onclick="uploadFile()">🚀 Submit</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function uploadFile() {
+      const input = document.getElementById('fileInput');
+      const fileNameText = document.getElementById('fileName');
+      const preview = document.getElementById('preview');
+
+      if (input.files.length === 0) {
+        fileNameText.textContent = "⚠️ Please select a file to upload.";
+        fileNameText.style.color = "red";
+        return;
+      }
+
+      const file = input.files[0];
+      fileNameText.textContent = `✅ File uploaded: ${file.name}`;
+      fileNameText.style.color = "green";
+
+      const reader = new FileReader();
+      preview.innerHTML = "";
+
+      reader.onload = function (e) {
+        const result = e.target.result;
+        if (file.type.startsWith("image/")) {
+          preview.innerHTML = `<p>🖼️ Image Preview:</p><img src="${result}" alt="Uploaded Image" />`;
+        } else if (file.type.startsWith("text/") || file.name.endsWith(".txt")) {
+          preview.innerHTML = `<p>📄 Text Preview:</p><pre>${result}</pre>`;
+        } else {
+          preview.innerHTML = `<p>📁 File uploaded, but cannot preview this file type.</p>`;
+        }
+      };
+
+      if (file.type.startsWith("text/") || file.name.endsWith(".txt")) {
+        reader.readAsText(file);
+      } else {
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+  <div style="text-align: center; margin-bottom: 30px;">
+    <a href="learnmore.html" style="
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      display: inline-block;
+    ">🏡 Back to Index</a>
+  </div>
+  
+</body>
+</html>

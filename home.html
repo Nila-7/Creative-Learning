@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-fancy {
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-fancy:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        h1::before {
+            content: "🚀 ";
+        }
+
+        
+        p::before {
+            content: "📘 ";
+        }
+
+        .image-section {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sectionHomepage">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                <a class="navbar-brand" href="#">Welcome ✨</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="register.html">📝 Register<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">📚 About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="contact.html">📞 Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html"> 🆘 Help</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ⚙️ More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="login.html">🎯 Login </a>
+                                <a class="dropdown-item" href="knowmore.html">🧭 Know More</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">✨ Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="🔎 Search" aria-label="Search">
+                        <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container text-center mt-5">
+            <h1>Creative Learning</h1>
+            <p>Learn New Things with Creative Learning</p>
+
+            <div class="buttons my-4">
+                <a href="login.html" class="btn btn-outline-info btn-fancy mr-2">🔐 Login</a>
+                <a href="knowmore.html" class="btn btn-info text-white btn-fancy ml-2">📖 Know More</a>
+            </div>
+
+            <div class="image-section">
+                <img src="https://cdn-icons-png.flaticon.com/512/1674/1674291.png" alt="Online Courses" />
+                <div class="tag html">HTML</div>
+                <div class="tag css">CSS</div>
+                <div class="tag js">JS</div>
+                <div class="tag java">JAVA</div>
+                <div class="tag cpp">C++</div>
+                <div class="tag php">PHP</div>
+                <div class="tag code"># CODE</div>
+                <div class="tag hello">HELLO WORLD!</div>
+            </div>
+        </div>
+
+        <footer class="bg-info text-white text-center py-3 mt-5">
+            <p class="mb-0">© 2025 Creative Learning Inc. All rights reserved. 🌟</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript"
+        src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+
+</html>

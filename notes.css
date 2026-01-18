@@ -1,0 +1,60 @@
+.body-not{
+    font-family: "Roboto";
+    margin: 2rem;
+    background-color: #f9f9f9;
+    font-size:32px;
+    font-weight:bold;
+  }
+
+  .note-container {
+    align-items: start;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  .button-not{
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .ul#noteList {
+    margin-top: 2rem;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul#noteList li {
+    background: #eef;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+  }
+  .notes-card{
+  background-color:#ffffff;
+  margin: 32px;
+  border-radius:23px;
+  }
